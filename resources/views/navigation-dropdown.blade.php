@@ -16,6 +16,13 @@
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
                 </div>
+                {{-- se agregó el siguiente link de navegación --}}
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('xfmr.index') }}" :active="request()->routeIs('xfmr.index')">
+                        Xfmr
+                    </x-jet-nav-link>
+                </div>
+                {{-- fin --}}
             </div>
 
             <!-- Settings Dropdown -->
