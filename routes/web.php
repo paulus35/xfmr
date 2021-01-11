@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\XfmrController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,5 +26,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/xfmr', [App\Http\Controllers\XfmrController::class, 'index'])->name('xfmr');
+Route::get('/xfmr', [XfmrController::class, 'index'])->name('xfmr');
 // Route::get('/xfmr', 'XfmrController@index')->name('xfmr');
