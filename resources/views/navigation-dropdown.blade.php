@@ -18,7 +18,7 @@
                 </div>
                 {{-- se agregó el siguiente link de navegación --}}
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('xfmr.index') }}" :active="request()->routeIs('xfmr.index')">
+                    <x-jet-nav-link href="{{ route('xfmr') }}" :active="request()->routeIs('xfmr')">
                         Xfmr
                     </x-jet-nav-link>
                 </div>

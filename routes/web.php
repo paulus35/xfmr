@@ -25,4 +25,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/xfmr', 'XfmrController@index')->name('xfmr.index');
+Route::get('/xfmr', [App\Http\Controllers\XfmrController::class, 'index'])->name('xfmr');
+// Route::get('/xfmr', 'XfmrController@index')->name('xfmr');
