@@ -15,6 +15,7 @@ class CreateXfmrsTable extends Migration
     {
         Schema::create('xfmrs', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_xfmr');
             $table->timestamps();
         });
     }
